@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+    <style>
+        * {
+            transition: 0.3s all ease;
+        }
+    </style>
+</head>
+
+<body class="dark bg-primary font-primary overflow-hidden">
+    <div class="grid grid-cols-main w-screen h-screen">
+        <div class="col-span-1 flex flex-col text-black border-r border-secondary">
+            <div class="logo border-b flex items-center justify-between border-secondary p-3 text-secondary">
+                <div class="font-semibold italic tracking-wide logo-name text-white">
+                    <p>Qwerty</p>
+                </div>
+                <div class="open text-ternary">
+                    <i class="ri-arrow-right-s-line text-xl"></i>
+                </div>
+            </div>
+            <div class="tile-1 text-ternary p-3">
+                <div class="profile px-2 py-1">
+                    <div class="settings text-sm flex items-center justify-between">
+                        <p>Settings</p>
+                        <i class="ri-settings-line text-lg"></i>
+                    </div>
+                    <div class="profile-block fcenter py-2">
+                        <div class="h-8 w-8 rounded-full bg-blue-200 font-semibold fcenter text-sm">
+                            <p>PV</p>
+                        </div>
+                        <p class="font-medium grow ml-2 text-white">Punit Verma</p>
+                    </div>
+                </div>
+                <div class="tiles border-b border-secondary pb-3">
+                    <div class="tile">
+                        <i class="ri-home-line text-lg"></i>
+                        <p class="grow ml-2 font-medium">Overview</p>
+                    </div>
+                    <div class="tile">
+                        <i class="ri-bank-card-line text-lg"></i>
+                        <p class="grow ml-2 font-medium">Transactions</p>
+                    </div>
+                    <div class="tile tile-active">
+                        <i class="ri-exchange-funds-line text-lg"></i>
+                        <p class="grow ml-2 font-medium">Data Transfers</p>
+                    </div>
+                    <div class="tile">
+                        <i class="ri-group-line text-lg"></i>
+                        <p class="grow ml-2 font-medium">People</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tile-2 text-ternary p-3 grow">
+                <div class="profile px-2 py-1">
+                    <div class="settings text-sm flex items-center justify-between">
+                        <p>Settings</p>
+                        <i class="ri-settings-line text-lg"></i>
+                    </div>
+                </div>
+                <div class="tiles border-b border-secondary pb-3">
+                    <div class="tile">
+                        <i class="ri-exchange-funds-line text-lg"></i>
+                        <p class="grow ml-2 font-medium">Data Transfers</p>
+                    </div>
+                    <div class="tile">
+                        <i class="ri-group-line text-lg"></i>
+                        <p class="grow ml-2 font-medium">People</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tile-3 text-white p-3">
+                <div class="fcenter plastic shadow-lg bg-gradient-to-tr from-secondary to-ternary p-3 rounded-lg">
+                    <i class="ri-shut-down-line"></i>
+                    <p class="grow ml-2 italic">Lorem, ipsum dolor.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-span-1 relative divide-y divide-secondary">
+            <div class="top fbetween p-3">
+                <p class="text-white text-2xl">Cards</p>
+                <div class="note rounded-lg text-md fcenter bg-secondary max-w-fit p-2 plastic text-teal-500">
+                    <i class="ri-add-line text-xl"></i>
+                    <p class="pr-2">create a note</p>
+                </div>
+            </div>
+            <div class="search fcenter text-gray-500">
+                <i class="ri-search-line text-xl px-2"></i>
+                <input type="text" name="" class="grow bg-transparent border-0 outline-none">
+            </div>
+            <div class="grid grid-cols-12 p-3 gap-2">
+                <div
+                    class="col-span-3 first-letter:text-3xl first-letter:italic text-justify text-gray-400 bg-secondary p-3 rounded-lg plastic text-sm">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi libero labore saepe laboriosam ex
+                        minima recusandae dolor voluptas consequuntur iste ea, deserunt quos ut ipsa temporibus
+                        voluptatum hic ducimus nesciunt?</p>
+                </div>
+            </div>
+            <div class="floating-menu fcenter flex-col text-white bg-ternary/50 p-1.5 rounded-lg plastic-shadow">
+                <div id="menu"
+                    class="grid grid-cols-4 bg-secondary m-2 rounded-lg divide-x-2 divide-dashed divide-ternary font-thin text-gray-300">
+                    <div class="col-span-1 p-3 text-appear">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, incidunt!</p>
+                    </div>
+                    <div class="col-span-1 p-3 text-appear">
+                        <p>dipisicing elit. Assumenda labore, in vitae corrupti molestiae tempora.
+                        <p>
+                    </div>
+                    <div class="col-span-1 p-3 text-appear">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, incidunt!</p>
+                    </div>
+                    <div class="col-span-1 p-3 text-appear">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, incidunt!</p>
+                    </div>
+                </div>
+                <div id="menu-toggle"
+                    class="fcenter select-none cursor-pointer plastic-shadow text-white bg-secondary p-3 rounded-lg plastic-shadow hover:bg-secondary/50">
+                    <p class="mr-2">home</p>
+                    <i class="ri-menu-3-line menu-btn-icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+    integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+<script src="js/anim.js" defer></script>
+
+</html>

@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fcenter {
+    @apply flex items-center justify-center;
+}
+
+.fbetween {
+    @apply flex items-center justify-between;
+}
+
+.plastic {
+    @apply plastic-shadow cursor-pointer;
+}
+
+.tile {
+    @apply px-2 py-1 mt-2 fcenter rounded-lg text-sm cursor-pointer;
+}
+
+@layer base {
+    .plastic-shadow {
+        box-shadow: inset 0 1px 0 0 hsl(0deg 0% 100% / 5%);
+    }
+
+    .tile:hover {
+        color: rgb(20, 184, 166) !important;
+        background-color: #1c1f24;
+        box-shadow: inset 0 1px 0 0 hsl(0deg 0% 100% / 5%);
+    }
+
+    .tile-active {
+        color: rgb(20, 184, 166) !important;
+        background-color: #1c1f24;
+        box-shadow: inset 0 1px 0 0 hsl(0deg 0% 100% / 5%);
+    }
+
+    .floating-menu {
+        margin: 0;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transform-origin: center;
+    }
+
+    #menu {
+        transform-origin: 0 100%;
+    }
+}
